@@ -1,0 +1,20 @@
+{
+    "name": "arief-karditya/unit-test-first-try",
+    "description": "PHP Unit Test",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AriefKarditya\\UnitTestFirstTry\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arief-Karditya",
+            "email": "nolifegansaya@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "9.5.5"
+    }
+}
