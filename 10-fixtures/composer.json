@@ -1,0 +1,25 @@
+{
+    "name": "arief-karditya/fixtures-php",
+    "description": "Fixtures PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AriefKarditya\\FixturesPhp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AriefKarditya\\FixturesPhp\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arief-Karditya",
+            "email": "nolifegansaya@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "9.5.5"
+    }
+}
