@@ -1,0 +1,28 @@
+{
+    "name": "arief-karditya/mock-object-php",
+    "description": "Mock Object PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AriefKarditya\\MockObjectPhp\\": "src/",
+            "AriefKarditya\\MockObjectPhp\\Entity\\": "src/entity",
+            "AriefKarditya\\MockObjectPhp\\Repository\\": "src/repository",
+            "AriefKarditya\\MockObjectPhp\\Service\\": "src/service"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AriefKarditya\\MockObjectPhp\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arief-Karditya",
+            "email": "nolifegansaya@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "9.5.5"
+    }
+}
