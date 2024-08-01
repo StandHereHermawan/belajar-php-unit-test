@@ -1,0 +1,28 @@
+{
+    "name": "arief-karditya/stub-php",
+    "description": "Stub PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AriefKarditya\\StubPhp\\": "src/",
+            "AriefKarditya\\StubPhp\\Entity\\": "src/entity",
+            "AriefKarditya\\StubPhp\\Repository\\": "src/repository",
+            "AriefKarditya\\StubPhp\\Service\\": "src/service"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AriefKarditya\\StubPhp\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arief-Karditya",
+            "email": "nolifegansaya@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "9.5.5"
+    }
+}
