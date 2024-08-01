@@ -1,0 +1,41 @@
+{
+    "name": "arief-karditya/test-suite-php",
+    "description": "Test Suite PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AriefKarditya\\TestSuitePhp\\": "src/",
+            "AriefKarditya\\TestSuitePhp\\Entity\\": "src/entity",
+            "AriefKarditya\\TestSuitePhp\\Helper\\": "src/helper",
+            "AriefKarditya\\TestSuitePhp\\Repository\\": "src/repository",
+            "AriefKarditya\\TestSuitePhp\\Service\\": "src/service"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AriefKarditya\\TestSuitePhp\\": "tests/",
+            "AriefKarditya\\TestSuitePhp\\Product\\": "tests/product",
+            "AriefKarditya\\TestSuitePhp\\Counter\\": "tests/counter",
+            "AriefKarditya\\TestSuitePhp\\Person\\": "tests/person",
+            "AriefKarditya\\TestSuitePhp\\Math\\": "tests/math"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arief-Karditya",
+            "email": "nolifegansaya@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "9.5.5"
+    },
+    "scripts": {
+        "test:all": "phpunit --configuration phpunit.xml --testsuite all",
+        "test:product": "phpunit --configuration phpunit.xml --testsuite product",
+        "test:person": "phpunit --configuration phpunit.xml --testsuite person",
+        "test:math": "phpunit --configuration phpunit.xml --testsuite math",
+        "test:counter": "phpunit --configuration phpunit.xml --testsuite counter",
+        "test:counter+incomplete+skipped": "phpunit --configuration phpunit.xml --testsuite counter-incomplete-skipped"
+    }
+}

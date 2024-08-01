@@ -1,0 +1,35 @@
+<phpunit colors="true" stopOnError="false" verbose="true">
+    <testsuites>
+        <testsuite name="counter">
+            <directory>tests/counter</directory>
+        </testsuite>
+
+        <testsuite name="counter-incomplete-skipped">
+            <file>tests/counter/5-incomplete/InCompleteCounterTest.php</file>
+            <file>tests/counter/6-skipped/SkippedCounterTest.php</file>
+        </testsuite>
+
+        <testsuite name="person">
+            <directory>tests/person</directory>
+        </testsuite>
+
+        <testsuite name="person-exception">
+            <file>tests/person/1-exception/ExceptionPersonTest.php</file>
+        </testsuite>
+
+        <testsuite name="math">
+            <directory>tests/math</directory>
+        </testsuite>
+
+        <testsuite name="product">
+            <directory>tests/product</directory>
+        </testsuite>
+
+        <testsuite name="all">
+            <directory>tests/counter</directory>
+            <directory>tests/math</directory>
+            <directory>tests/person</directory>
+            <directory>tests/product</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
